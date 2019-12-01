@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find Blood</title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+</head>
+<body style="background-color: black">
+	<div  style=" height: 90px; font-family: sans-serif;" id="title_tag">
+
+		<h4 style="margin-top: 0px; padding-top: 8px ; font-style: italic;font-family:serif ; font-size: 35px; font-weight: bold; text-align: center; color: white" id="thehuman"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPqvXyUrbvOUAYoQ8PvTDpueBB5HU30AAIjhqjiA1SbY-y98qm&s" style="width: 80px ;height: 70px;margin: 10px"> RED DROP</h4>
+		
+	</div>
+<!--<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">About Us</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Donate</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Why To Donate <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#needtodonate">Blood Demand</a></li>
+          <li><a href="#">Blood Types</a></li>
+          
+        </ul>
+      </li>
+      <li class="dropdown"><a  class="dropdown-toggle" data-toggle="dropdown" href="#">Who Can Donate<span class="caret"></span></a>
+      	<ul class="dropdown-menu">
+      		<li><a href="#">Health And Eligibility</a></li>
+      		<li><a href="#">Can I give Blood ?</a></li>
+      		<li><a href="#">Travel Considerations</a></li>
+      	</ul></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Donation Procedure<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+      	<li><a href="#">Register Online</a></li>
+      	<li><a href="#">Prepare to Donate</a></li>
+      	<li><a href="#">Conclusion after donation</a></li>
+      </ul>
+  </li>
+  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Events Organised By Us<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+      	<li><a href="#">Donation Camps</a></li>
+      	<li><a href="#">Blood Drives</a></li>
+      	
+      </ul>
+  </li>
+      
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li ><button href="#" data-target="#button" data-toggle="modal" style="color: black ;background-color: #ff3333;margin-top: 5px;width: 100px;height: 50px"><span class="glyphicon glyphicon-user" ></span> Donate</button></li>
+      <div class="modal fade"  id="button" aria-labelledby="exampleModalLongTitle">
+	<div class="modal-dialog" >
+		<div class="modal-content" >
+			<div class="modal-header">
+			<h1 style="font-style:bold;"><b><i>Donate and save</i></b></h1>	
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group">
+						<label for="fname"> Name Of Hospital</label>
+						<input type="name" class="form-control" id="fname" placeholder="Enter First Name">
+					</div>
+					<div>
+						<label for="lname"> Address</label>
+						<input type="name" id="lname" placeholder="Enter Last Nmae" class="form-control">
+						
+					</div>
+					
+					<div class="form-group">
+						<label for="Age">Units of Blood Available</label>
+						<input type="number" class="form-control" id="Age" placeholder="Age">
+					</div>
+					
+					<div class="form-group">
+						<label for="contactno">Contact No.</label>
+						<input type="text" class="form-control" id="Contactno" placeholder="Contact Number">
+					</div>
+					<div class="form-group">
+						<label for="Emailid">Email Id</label>
+						<input type="Email" class="form-control" id="Emailid" placeholder="Email id">
+					</div>
+					
+					<a><button class="btn btn-primary" type="submit" style="color: white ; font-style: bold">Locate Yourself</button></a>
+				</form>
+			
+				
+			</div>	
+			
+			
+		</div>
+		
+	</div>
+	
+</div>
+     
+    </ul>
+  </div>
+</nav>-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">About Us</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Donate <span class="sr-only">(current)</span></a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Why to Donate
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#needtodonate">Blood Need</a>
+          <a class="dropdown-item" href="#kindsofblood">Kind Of Blood</a>
+          
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Who Can Donate
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Health And Eligibity</a>
+         
+          <a class="dropdown-item" href="#">Travel Consideration</a>
+           <a class="dropdown-item" href="#">Can I donate ?</a>
+
+          
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Procedure for Donation
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Online Registration</a>
+          <a class="dropdown-item" href="#">Prepare To Donate</a>
+          <a class="dropdown-item" href="#">Give Feedback</a>
+          
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Events Organised By Us
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Blood Drives</a>
+          <a class="dropdown-item" href="#"> Blood Camps</a>
+          
+        </div>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li ><button   href="#" data-target="#button" data-toggle="modal" style="color: black ;background-color: #ff3333;margin-top: 5px;width: 100px;height: 50px ; "><span class="glyphicon glyphicon-user" ></span> Donate</button></li>
+      <div class="modal fade"  id="button" aria-labelledby="exampleModalLongTitle">
+  <div class="modal-dialog" >
+    <div class="modal-content" >
+      <div class="modal-header">
+      <h1 style="font-style:bold;"><b><i>Donate and save</i></b></h1> 
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="fname"> Name Of Hospital</label>
+            <input type="name" class="form-control" id="fname" placeholder="Enter First Name">
+          </div>
+          <div>
+            <label for="lname"> Address</label>
+            <input type="name" id="lname" placeholder="Enter Last Nmae" class="form-control">
+            
+          </div>
+          
+          <div class="form-group">
+            <label for="Age">Units of Blood Available</label>
+            <input type="number" class="form-control" id="Age" placeholder="Age">
+          </div>
+          
+          <div class="form-group">
+            <label for="contactno">Contact No.</label>
+            <input type="text" class="form-control" id="Contactno" placeholder="Contact Number">
+          </div>
+          <div class="form-group">
+            <label for="Emailid">Email Id</label>
+            <input type="Email" class="form-control" id="Emailid" placeholder="Email id">
+          </div>
+          
+          <a><button class="btn btn-primary" type="submit" style="color: white ; font-style: bold">Locate Yourself</button></a>
+        </form>
+      
+        
+      </div>  
+      
+      
+    </div>
+    
+  </div>
+  
+</div>
+     
+    </ul>
+
+  </div>
+</nav>
+<div class="container" style="width: 1500px ; height: 800px">
+  
+  <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.oneblood.org/_resources/images/content/Blood-Usage-Platelets.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.oneblood.org/_resources/images/content/Blood-Usage-Platelets.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.oneblood.org/_resources/images/content/Blood-Usage-Platelets.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> -->
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo1" data-slide-to="1"></li>
+    
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHRu6kg127ymD8QSS1-VxYlZ3jF_D3i9TlEfpOqdW7xNNuyO6o&s" alt="blood1" width="1500" height="500">
+       
+    </div>
+    <div class="carousel-item">
+      <img src="data:image/jpeg;base64,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" alt="blood2" width="1500" height="500">
+      
+    
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
+<div id="needtodonate">
+<h1 style="text-align: center;size: 40px; color: white;font-style: italic;">Need To Donate</h1>
+<p style="border-style: dotted ; color: white">
+	There are many reasons patients need blood. A common misunderstanding about blood usage is that accident victims are the patients who use the most blood. Actually, people needing the most blood include those:<br>
+1.Being treated for cancer<br>
+2.Undergoing orthopedic surgeries<br>
+3.Undergoing cardiovascular surgeries<br>
+4.Being treated for inherited blood disorders<br>
+In fact, according to a 2011 survey by the Department of Health and Human Services, here is the actual breakdown of how blood is used in the U.S.
+	<img src="https://www.oneblood.org/_resources/images/content/Blood-Usage-Platelets.jpg"  style="width: 800px ; height: 500px; " align="center">
+</p>	
+</div>
+<div id="kindsofblood">
+	<h1 style="text-align: center;size: 40px; color: white;font-style: italic;">Kinds of Blood Group</h1>
+  <p style="border-style: double; ; color: white">There are four main blood groups defined by the ABO system:<br>
+
+1.blood group A – has A antigens on the red blood cells with anti-B antibodies in the plasma<br>
+2.blood group B  – has B antigens with anti-A antibodies in the plasma<br>
+3.blood group O  – has no antigens, but both anti-A and anti-B antibodies in the plasma<br>
+4.blood group AB  – has both A and B antigens, but no antibodies<br>
+5.Blood group O is the most common blood group. Almost half of the UK population (48%) has blood group O. <br>
+
+Receiving blood from the wrong ABO group can be life threatening.
+    
+  </p>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>
+
