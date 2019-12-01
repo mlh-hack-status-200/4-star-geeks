@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Red Drop</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+<button id = "find-me">Show my location</button><br/>
+<p id = "status"></p>
+<a id = "map-link" target="_blank"></a>
+<form action="index.php" method="post"></form>
+<br><br>
+<form action="index.php" method="POST">
+    <table>
+         <tr>
+          <td>Username :</td>
+          <td><input type="text" name="username" required></td>
+         </tr>
+         <tr>
+            <td>Blood Group :</td>
+            <td><input type="text" name="blood_group" required></td>
+            </tr>
+         <tr>
+        <tr>
+            <td>Units :</td>
+            <td><input type="number" name="units" required></td>
+        </tr>
+        <tr>
+            <td>X_Coordinate :</td>
+            <td><input type="text" name="x_coordinate" required id="xc"></td>
+        </tr>
+        <tr>
+            <td>Y_Coordinate :</td>
+            <td><input type="text" name="y_coordinate" required id="yc"></td>
+        </tr>
+          <td><input type="submit" value="Submit"></td>
+         </tr>
+    </table>
+</form>
+<script src="demo.js"></script>
+</body>
+</html>
